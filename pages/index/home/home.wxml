@@ -1,0 +1,10 @@
+<view class="container">
+  <!-- 头像选择按钮 -->
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <!-- 显示头像的图片 -->
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button>
+  <!-- 昵称输入框 -->
+  <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+ 
+</view>

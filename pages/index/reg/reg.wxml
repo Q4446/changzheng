@@ -1,0 +1,38 @@
+<view class="container">
+   <view class="title">注册页面</view>
+   
+   <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" bindtap="handleAvatarUrlInput">
+    <!-- 显示头像的图片 -->
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button>
+
+  <view style="margin-top: 20px;"></view>
+  
+  <view class="input-group">
+    <input type="text" placeholder="学号" class="input-field" bindinput="onStudentIdInput" />
+  </view>
+
+  <view class="input-group">
+    <input type="number" placeholder="学院" class="input-field" bindinput="onAcademyInput" />
+  </view>
+
+  <view class="input-group">
+    <input type="text" placeholder="班级" class="input-field" bindinput="onClassInput" />
+  </view>
+
+  <view class="input-group">
+    <input type="text" placeholder="真实姓名" class="input-field" bindinput="onUnameInput" />
+  </view>
+
+  <view class="input-group">
+    <input type="nickname" class="input-field" placeholder="请输入昵称" bindinput="onNickNameInput"/>
+  </view>
+ 
+
+
+
+  <button class="register-button" bindtap="register">注册</button>
+
+  <button class="login-button" 
+  bindtap="goToLogin">返回登录界面</button>
+</view>

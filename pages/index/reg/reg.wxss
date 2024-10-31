@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.title {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.input-field {
+  border: 1px solid lightblue;
+  padding: 10px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.register-button {
+  background-color: #4285F4; /* 一种自然的蓝色 */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #34A853; /* 另一种颜色，可根据喜好调整 */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.avatar-wrapper {
+  position: relative;
+  
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+
+}

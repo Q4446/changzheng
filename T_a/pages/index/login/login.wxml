@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="title">XX 小程序</view>
+
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" bindtap="handleAvatarUrlInput">
+    <!-- 显示头像的图片 -->
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button>
+
+
+  <button bindtap="login" class="login-button">登录</button>
+
+  <!--bindinput属性绑定了handleUsernameInput和handlePasswordInput函数,获取用户输入的用户名和密码-->
+  <!--bindtap属性绑定了login函数,用于登录
+  -->
+  <!--goToRegister函数,用于跳转到注册页面-->
+  <button bindtap="goToRegister" class="register-button">注册</button>
+
+
+  
+
+</view>

@@ -1,0 +1,15 @@
+
+
+<view>
+  <map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" polyline="{{polyline}}" style="width: 100vh;height: 50vh;" scale="5"></map>
+  <view style="display: flex; justify-content: space-around; margin-top: 20px;">
+    <button bind:tap="startJourney">开始路程</button>
+  </view>
+  <view style="display: grid; padding: 10px; margin-top: 10px;">
+    <view style="margin-bottom: 10px;">路线图</view>
+    <view style="display: flex; ">
+      <view style="margin-top: 5px;margin-right: 100px;color: gray;">行走路程: {{distance}}</view>
+      <view style="margin-top: 5px;">行走天数: {{days}}</view>
+    </view>
+  </view>
+</view>
