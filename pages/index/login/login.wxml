@@ -8,16 +8,19 @@
     <image class="avatar" src="{{avatarUrl}}"></image>
   </button>
 
+  <!-- <button bind:tap="getUserProfile">授权</button> -->
 
-  <button bindtap="login" class="login-button">登录</button>
+
+  <!-- <button bindtap="login" class="login-button">登录</button>
 
   <!--bindinput属性绑定了handleUsernameInput和handlePasswordInput函数,获取用户输入的用户名和密码-->
   <!--bindtap属性绑定了login函数,用于登录
   -->
   <!--goToRegister函数,用于跳转到注册页面-->
-  <button bindtap="goToRegister" class="register-button">注册</button>
+  <!-- <button bindtap="goToRegister" class="register-button">注册</button> --> 
 
-
-  
-
+  <view wx:if="{{showPrivacy}}">
+  <!-- <view>隐私弹窗内容....</view> -->
+  <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgreePrivacyAuthorization">授权</button>
+  </view>
 </view>

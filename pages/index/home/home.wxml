@@ -5,6 +5,7 @@
     <image class="avatar" src="{{avatarUrl}}"></image>
   </button>
   <!-- 昵称输入框 -->
-  <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+  <input type="nickname" model:value="{{username}}" class="weui-input"/>
+  
  
 </view>
